@@ -1,0 +1,177 @@
+/* common */
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+h1 {
+  margin: 0;
+  padding-top: 64px;
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 8%;
+}
+
+table {
+  margin: 0 auto;
+  line-height: 2;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 4;
+}
+
+.animate {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity .3s, transform .3s;
+}
+
+.animate.appear {
+  opacity: 1;
+  transform: none;
+}
+
+
+/* header */
+
+header {
+  background-color: gray;
+  position: fixed;
+  width: 100%;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  margin-right: 16px;
+  font-weight: bold;
+  line-height: 4;
+}
+
+header a {
+  color: #eee;
+}
+
+/* profile section*/
+
+.profile {
+  background-color: orange;
+}
+
+.profile p {
+  line-height: 2;
+  margin: 64px auto;
+}
+
+.center_box {
+  text-align: center;
+}
+
+.center_box p {
+  display: inline-block;
+  text-align: left;
+}
+
+.center_box p + p {
+  display: inline-block;
+  text-align: left;
+}
+
+
+/* career section*/
+
+.career {
+  background-color: aqua;
+}
+
+table {
+  padding: 64px;
+}
+
+/* samplesait section */
+
+.samplesite {
+  background-color: greenyellow;
+}
+
+.samplesite p {
+  text-align: center;
+}
+
+.samplesite li {
+  margin: 64px auto ;
+  font-size: 20px;
+}
+
+.samplesite a {
+  color: black;
+}
+
+.samplesite i {
+  margin-right: 8px;
+}
+/* footer */
+
+footer {
+  background-color: gray;
+  text-align: center;
+  color: #eee;
+}
+
+small {
+  font-size: 15px;
+  line-height: 4;
+}
+
+#to_top {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  transition: opacity .3s;
+}
+
+#to_top i {
+  font-size: 32px;
+  color: black;
+}
+
+/* large screen */
+
+/* @media (min-width: 600px) {
+  
+  .container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .pic,
+  .desc {
+    width: 50%;
+  }
+  } */
