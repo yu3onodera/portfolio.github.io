@@ -6,6 +6,10 @@ body {
   font-weight: bold;
 }
 
+/* .wrap {
+  overflow: hidden;
+} */
+
 ul {
   list-style: none;
   text-decoration: none;
@@ -14,16 +18,21 @@ ul {
 
 a {
   text-decoration: none;
+  color: #eee;
 }
 
 a:hover {
   cursor: pointer;
   opacity: 0.5;
-}
+} 
+
+li:hover {
+  cursor: pointer;
+  opacity: 0.5;
+} 
 
 h1 {
   margin: 0;
-  padding-top: 64px;
   text-align: center;
 }
 
@@ -39,7 +48,6 @@ p {
 
 h1 {
   font-weight: bold;
-  font-size: 28px;
   line-height: 4;
 }
 
@@ -73,21 +81,26 @@ header {
   background-color: gray;
   position: fixed;
   width: 100%;
+  color: #fff;
 }
+
 
 header ul {
   display: flex;
 }
 
 header li {
-  padding: 0px 32px 0px 32px;
   font-weight: bold;
   line-height: 4;
   box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
   margin: 0;
+  width: 100%;
+  text-align: center;
 }
 
-header a {
+header
+
+header {
   color: #fff;
 }
 
@@ -97,13 +110,17 @@ header a {
   background-color: #fff;
 }
 
+.profile h1 {
+  padding-top: 8%;
+}
+
 .profile p {
-  line-height: 3;
+  line-height: 2;
 }
 
 .center_box {
   text-align: center;
-  padding: 64px;
+  padding: 5%;
 }
 
 .profile.center_box p {
@@ -124,14 +141,22 @@ header a {
   background-color: rgba(0, 0, 0, .15);
 }
 
-table {
-  padding: 64px;
+.career h1 {
+  padding-top: 8%;
+}
+
+.career table {
+  margin-top: 6%;
 }
 
 /* skill section */
 
 .skills {
   background-color: #eee;
+}
+
+.skills h1 {
+  padding-top: 8%;
 }
 
 .center_box {
@@ -141,40 +166,45 @@ table {
 .center_box table {
   display: inline-block;
   text-align: left;
-  padding: 64px;
+  padding: 5%;
   line-height: 3;
   font-weight: bold;
 }
 
 .skills img {
   transition: all 1s;
-  margin: 64px auto;
+  margin: 5% auto;
   display: block;
 }
 
-/* samplesait section */
+/* sait section */
 
 .samplesite {
   background-color: rgba(0, 0, 0, 0.15);
 }
 
+.samplesite h1 {
+padding-top: 8%;
+}
+
 .samplesite p {
   text-align: center;
-  padding-top: 90px;
+  padding-top: 10%;
+  margin: 5%;
 }
 
-.samplesite ul {
-  display: flex;
-}
 
 .samplesite li {
-  margin: 128px auto ;
-  /* font-size: 20px; */
-  box-shadow: 0 1px 2px rgba(0, 0, 0, .5);
-  padding: 16px;
+text-align: left;
+}
+
+
+.samplesite li {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+  padding: 2% 5%;
   background-color: rgba(0, 0, 0, .1);
   border-radius: 8px;
-  
+  margin: 15% auto 25%;
 }
 
 .samplesite a {
@@ -182,7 +212,7 @@ table {
 }
 
 .samplesite i {
-  margin-right: 8px;
+  margin-right: 2%;
 }
 
 /* footer */
@@ -194,7 +224,7 @@ footer {
 }
 
 small {
-  font-size: 15px;
+  /* font-size: 15px; */
   line-height: 4;
 }
 
@@ -210,28 +240,74 @@ small {
   color: black;
 }
 
+/* small screen */
+
+@media screen and (min-width: 207px) and (max-width:429px) {
+
+img {
+  margin: 5% auto;
+}
+
+p,
+table {
+  font-size: 13px;
+}
+
+.header  li {
+  line-height: 3;
+}
+
+.profile h1 {
+  padding-top: 20%;
+}
+
+.career h1 {
+  padding-top: 20%;
+}
+
+.career table {
+  padding: 5%;
+}
+
+
+.skills h1 {
+  padding-top: 20%;
+}
+
+.samplesite h1 {
+  padding-top: 20%;
+}
+
+.samplesite p {
+  padding: 10%;
+}
+
+.samplesite li {
+margin: 15%;
+text-align: center;
+}
+
+footer {
+padding: 0;
+}
+}
+
+
+/* midium screen */
+
+@media screen and (min-width: 430px) {
+
+  .samplesite ul {
+    display: flex;
+  }
+
+  .career table {
+    padding: 5%;
+  }
+
+}
+
 /* large screen */
 
-/* @media (min-width: 770px) {
-  
-  .container {
-    display: flex;
-    align-items: center;
-  }
-  
-  .pic,
-  .text {
-width: 50%;
-  }
 
 
-.career table
-,.skills table
- {
-  width: 800px;
-}
-
-.skills.container {
-  flex-direction: row-reverse;
-}
-  } */
