@@ -19,7 +19,8 @@ ul {
 a {
   text-decoration: none;
   color: #eee;
-}
+  display: block;
+} 
 
 a:hover {
   cursor: pointer;
@@ -30,6 +31,10 @@ li:hover {
   cursor: pointer;
   opacity: 0.5;
 } 
+
+li {
+  position: relative;
+}
 
 h1 {
   margin: 0;
@@ -84,6 +89,9 @@ header {
   color: #fff;
 }
 
+header a {
+  display: block;
+}
 
 header ul {
   display: flex;
@@ -98,11 +106,6 @@ header li {
   text-align: center;
 }
 
-header
-
-header {
-  color: #fff;
-}
 
 /* profile section*/
 
@@ -130,6 +133,11 @@ header {
 }
 
 .center_box p {
+  display: inline-block;
+  text-align: left;
+}
+
+.center_box p + p {
   display: inline-block;
   text-align: left;
 }
@@ -192,7 +200,6 @@ padding-top: 8%;
   padding-top: 10%;
   margin: 5%;
 }
-
 
 .samplesite li {
 text-align: left;
@@ -282,9 +289,18 @@ table {
   padding: 10%;
 }
 
+.samplesite ul {
+  margin-bottom: -15%;
+  padding-bottom: 15%;
+}
+
 .samplesite li {
 margin: 15%;
 text-align: center;
+}
+
+.samplesite a {
+  display: block;
 }
 
 footer {
@@ -297,10 +313,17 @@ padding: 0;
 
 @media screen and (min-width: 430px) {
 
+  p,
+  table {
+    font-size: 15px;
+  }
+
   .samplesite ul {
     display: flex;
   }
-
+  .samplesite a {
+  display: block;
+}
   .career table {
     padding: 5%;
   }
