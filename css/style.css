@@ -208,7 +208,6 @@ text-align: left;
 
 .samplesite li {
   box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
-  padding: 2% 5%;
   background-color: rgba(0, 0, 0, .1);
   border-radius: 8px;
   margin: 15% auto 25%;
@@ -216,6 +215,10 @@ text-align: left;
 
 .samplesite a {
   color: black;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  /* width: 80px; */
 }
 
 .samplesite i {
@@ -299,38 +302,57 @@ margin: 15%;
 text-align: center;
 }
 
-.samplesite a {
-  display: block;
-}
 
 footer {
 padding: 0;
 }
+
+
 }
 
 
 /* midium screen */
 
-@media screen and (min-width: 430px) {
+@media screen and (min-width: 430px) and (max-width:839px) {
 
   p,
   table {
-    font-size: 15px;
+    font-size: 14px;
   }
-
   .samplesite ul {
     display: flex;
   }
   .samplesite a {
   display: block;
-}
+  width: 100px;
+  }
   .career table {
     padding: 5%;
   }
 
+  .overlay,
+  .sp-menu {
+    display: none;
+  }
+  
 }
 
 /* large screen */
 
-
-
+@media screen and (min-width:840px) {
+  
+  p,
+  table {
+    font-size: 15px;
+  }
+  .samplesite ul {
+    display: flex;
+  }
+  .samplesite a {
+    display: block;
+    width: 100px;
+  }
+  .career table {
+    padding: 5%;
+  }
+}
